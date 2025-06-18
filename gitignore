@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment files
+.env
+.venv
+env/
+venv/
+
+# Python virtual environments
+*.egg-info/
+.eggs/
+*.egg
+
+# Dataset and large files (do not commit raw data)
+data/*.csv
+
+# OS-specific files
+.DS_Store
+Thumbs.db
