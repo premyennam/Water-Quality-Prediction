@@ -46,8 +46,10 @@ The dataset includes physicochemical parameters:
 ## 🤖 Modeling
 
 - Multi-output regression using **Random Forest Regressor**
-- Evaluation metrics: **Mean Squared Error**, **R² Score**
+- Evaluation metrics: **Mean Absolute Error**, **Mean Squared Error**, **R² Score**
 - Trained on extracted and cleaned numerical features
+
+Model Link: https://drive.google.com/file/d/13jy3JdxHrRtn9YfUxrg_rgCFnXpME8qb/view?usp=sharing
 
 ---
 
