@@ -9,12 +9,27 @@ This project focuses on predicting key water quality indicators using historical
 ```
 WaterQualityPrediction/
 │
-├── PB_All_2000_2021.csv             # Water quality dataset (not committed to repo)
-├── WaterQualityPrediction.ipynb     # Jupyter notebook with full analysis
-├── Parameters_WQM_RMS.pdf           # Reference on parameter meaning and significance
-├── requirements.txt                 # Python dependencies
-├── README.md                        # Project documentation
-└── .gitignore                       # Files and folders to ignore
+├── 📊 Data
+│   ├── PB_All_2000_2021.csv                  # Water quality dataset
+│   ├── predicted_water_quality_essential.csv # Predicted pollutant levels
+│   └── unsafe_samples_essential.csv          # Samples classified as unsafe
+│
+├── 📔 Notebooks
+│   └── WaterQualityPrediction.ipynb          # Original notebook
+│ 
+│
+├── 📁 Models
+│   ├── pollution_model.pkl                   # Trained Random Forest model
+│   └── model_columns.pkl                     # Feature alignment reference
+│
+├── 📁 Docs
+│   └── Parameters_WQM_RMS.pdf                # Pollutant descriptions and environmental limits
+│
+├── .gitignore                                # Ignore patterns for git
+├── requirements.txt                          # Python library dependencies
+├── README.md                                 # Full project documentation
+└── LICENSE                                    # License file (MIT, to be added if not present)
+
 ```
 
 ---
