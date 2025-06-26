@@ -4,6 +4,14 @@ This project focuses on predicting key water quality indicators using historical
 
 ---
 
+## 🎯 Project Goals
+
+- Forecast pollutant levels at monitoring stations using historical data
+- Classify water safety based on predicted pollutant concentrations
+- Support decisions on environmental action and regulation
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -45,7 +53,7 @@ The dataset includes physicochemical parameters:
 - **PO₄ (Phosphate), SO₄ (Sulfate), CL (Chloride)** – Nutrients and industrial traces
 - **Suspended Solids** – Turbidity and sediment impact
 
-📄 See `aParameters_WQM_RMS.pdf` for environmental context and permissible limits.
+📄 See `Parameters_WQM_RMS.pdf` for environmental context and permissible limits.
 
 ---
 
@@ -60,9 +68,30 @@ The dataset includes physicochemical parameters:
 
 ## 🤖 Modeling
 
-- Multi-output regression using **Random Forest Regressor**
+- Algorithm: **Random Forest Regressor** using **MultiOutputRegressor** 
 - Evaluation metrics: **Mean Absolute Error**, **Mean Squared Error**, **R² Score**
 - Trained on extracted and cleaned numerical features
+- Visual comparisons between actual vs predicted values 
+
+---
+
+## 🧪 Water Safety Classification
+
+Predicted pollutant levels are compared against national/WHO safety thresholds. Each record is labeled as:  
+- ✅ Safe  
+- ⚠️ Unsafe  
+
+---
+
+## 📈 Station-Year Forecasting
+
+Forecast pollutant levels for any given year and monitoring station. Visualize pollutant variation over time.
+
+---
+
+## 🚀 Deployment (Optional)
+
+A Streamlit app can be developed for interactive pollutant prediction and visualization.
 
 Model Link: https://drive.google.com/file/d/13jy3JdxHrRtn9YfUxrg_rgCFnXpME8qb/view?usp=sharing
 
