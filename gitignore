@@ -1,25 +1,61 @@
-# Byte-compiled / optimized / DLL files
+# =====================
+# Python & Bytecode
+# =====================
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
+# =====================
+# Jupyter Notebooks
+# =====================
+.ipynb_checkpoints/
 
-# Environment files
+# =====================
+# Environment Files
+# =====================
 .env
-.venv
+.venv/
 env/
 venv/
-
-# Python virtual environments
 *.egg-info/
 .eggs/
 *.egg
 
-# Dataset and large files (do not commit raw data)
-data/*.csv
+# =====================
+# Streamlit Caches
+# =====================
+.streamlit/config.toml
+.streamlit/secrets.toml
+**/.streamlit/config.toml
+**/.streamlit/secrets.toml
+.streamlit/
 
-# OS-specific files
+# =====================
+# Model Artifacts
+# =====================
+*.pkl
+*.joblib
+
+# =====================
+# Dataset Files
+# =====================
+data/
+*.csv
+*.tsv
+*.xlsx
+
+# =====================
+# Outputs & Logs
+# =====================
+*.log
+*.out
+*.bak
+*.tmp
+
+# =====================
+# IDE / OS Specific
+# =====================
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
