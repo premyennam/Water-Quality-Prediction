@@ -10,14 +10,17 @@ joblib
 streamlit
 
 # Visualization
-plotly
-matplotlib.pyplot
+matplotlib
 seaborn
+plotly
 
 # Notebook Support
 ipykernel
 notebook
 jupyterlab
 
-# Optional: Ensures compatibility across environments
+# Optional: Environment Variable Management
 python-dotenv
+
+
+
