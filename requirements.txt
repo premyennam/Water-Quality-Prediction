@@ -1,4 +1,4 @@
-# Core Data Science Libraries
+# Core Data Science and Machine Learning Libraries
 pandas
 numpy
 scikit-learn
@@ -11,6 +11,8 @@ streamlit
 
 # Visualization
 plotly
+matplotlib.pyplot
+seaborn
 
 # Notebook Support
 ipykernel
