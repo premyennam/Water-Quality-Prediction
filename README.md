@@ -91,8 +91,37 @@ Forecast pollutant levels for any given year and monitoring station. Visualize p
 
 ## 🚀 Deployment (Optional)
 
-A Streamlit app can be developed for interactive pollutant prediction and visualization.
+A interactive **Streamlit web app** can be developed for interactive pollutant prediction, data exploration and visualization.
 
+### 📦 Prerequisites
+
+Install dependencies using either of the following methods:
+
+#### Option 1: pip
+
+```bash
+pip install -r requirements.txt
+```
+#### Option 2: conda
+
+```bash
+conda env create -f environment.yml
+conda activate water_pollutants_env
+```
+
+### 🖥️ Run the App
+
+```bash
+streamlit run app.py
+```
+
+### 📲 Features
+
+- Input any year and station ID to predict pollutant levels
+- View visual results in interactive bar charts
+- Download predicted values as CSV
+
+### 📦 Model File: pollution_model.pkl (Google Drive)
 Model Link: https://drive.google.com/file/d/13jy3JdxHrRtn9YfUxrg_rgCFnXpME8qb/view?usp=sharing
 
 ---
@@ -128,3 +157,4 @@ jupyter notebook notebooks/WaterQualityPrediction.ipynb
 ## ⚖️ License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
