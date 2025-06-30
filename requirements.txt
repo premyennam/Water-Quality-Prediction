@@ -1,3 +1,4 @@
+(For pip Users)
 # Core Data Science and Machine Learning Libraries
 pandas
 numpy
@@ -22,5 +23,42 @@ jupyterlab
 # Optional: Environment Variable Management
 python-dotenv
 
+(For conda Users)
+name: water_pollutants_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - joblib
+  - streamlit
+  - plotly
+  - ipykernel
+  - notebook
+  - jupyterlab
+  - pip
+  - pip:
+      - streamlit
 
+📦 Installation Steps:
 
+✅ If using pip:
+bash
+Copy code
+python -m venv water_env
+source water_env/bin/activate  # or water_env\Scripts\activate (Windows)
+pip install -r requirements.txt
+
+✅ If using conda:
+bash
+Copy code
+conda env create -f environment.yml
+conda activate water_pollutants_env
+
+🚀 Run the app
+bash
+Copy code
+streamlit run app.py
