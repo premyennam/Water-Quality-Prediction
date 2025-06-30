@@ -1,5 +1,21 @@
+# Core Data Science Libraries
 pandas
 numpy
 scikit-learn
-matplotlib
-seaborn
+
+# Model Persistence
+joblib
+
+# Web App Interface
+streamlit
+
+# Visualization
+plotly
+
+# Notebook Support
+ipykernel
+notebook
+jupyterlab
+
+# Optional: Ensures compatibility across environments
+python-dotenv
