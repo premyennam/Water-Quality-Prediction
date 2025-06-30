@@ -30,6 +30,6 @@ dependencies:
   - jupyterlab
   - pip
   - pip:
-      - streamlit
+  - streamlit
 
 
