@@ -1,0 +1,21 @@
+name: water_pollutants_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - joblib
+  - streamlit
+  - plotly
+  - ipykernel
+  - notebook
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - python-dotenv
+  - pip
+  - pip:
+      - streamlit
