@@ -16,27 +16,23 @@ This project focuses on predicting key water quality indicators using historical
 
 ```
 WaterQualityPrediction/
-│
-├── 📊 Data
-│   ├── PB_All_2000_2021.csv                  # Water quality dataset
-│   ├── predicted_water_quality_essential.csv # Predicted pollutant levels
-│   └── unsafe_samples_essential.csv          # Samples classified as unsafe
-│
-├── 📔 Notebooks
-│   └── WaterQualityPrediction.ipynb          # Original notebook
-│ 
-│
-├── 📁 Models
-│   ├── pollution_model.pkl                   # Trained Random Forest model
-│   └── model_columns.pkl                     # Feature alignment reference
-│
-├── 📁 Docs
-│   └── Parameters_WQM_RMS.pdf                # Pollutant descriptions and environmental limits
-│
-├── .gitignore                                # Ignore patterns for git
-├── requirements.txt                          # Python library dependencies
-├── README.md                                 # Full project documentation
-└── LICENSE                                    # License file (MIT, to be added if not present)
+├── PB_All_2000_2021.csv                  # Raw water quality dataset (2000–2021)
+├── predicted_water_quality_essential.csv # Model output: predicted pollutant levels
+├── unsafe_samples_essential.csv          # Classified unsafe samples based on thresholds
+├── Parameters_WQM_RMS.pdf                # Descriptions and permissible limits for each pollutant
+├── WaterQualityPrediction.ipynb          # Jupyter Notebook: data cleaning, modeling, and evaluation
+├── app.py                                # Streamlit app for interactive prediction and visualization
+├── model_columns.pkl                     # Column structure used during model training
+├── pollution_model.pkl                   # Trained Random Forest model (MultiOutput Regressor)
+├── requirements.txt                      # pip dependency file for Python environment setup
+├── .gitattributes                        # Git LFS tracking for large files (e.g., .pkl, .csv)
+├── .gitignore                            # Git ignore rules to exclude unnecessary files
+├── LICENSE                               # MIT license for open-source use
+└── README.md                             # Full project overview and instructions
+
+💡 Tips:
+- Keep model_columns.pkl and pollution_model.pkl versioned if reproducibility matters.
+- Use .gitattributes with Git LFS to manage .csv and .pkl efficiently.
 
 ```
 
