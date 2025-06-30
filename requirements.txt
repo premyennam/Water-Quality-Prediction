@@ -1,4 +1,4 @@
-(For pip Users)
+# For pip Users
 pandas
 numpy
 scikit-learn
@@ -12,7 +12,7 @@ notebook
 jupyterlab
 python-dotenv
 
-(For conda Users)
+# For conda Users
 name: water_pollutants_env
 channels:
   - defaults
@@ -31,5 +31,30 @@ dependencies:
   - pip
   - pip:
   - streamlit
+
+# ✅ pip is included in conda to handle packages like Streamlit that may be updated more frequently on PyPI.
+
+# 📦 Installation Steps
+
+# ✅ If using pip:
+bash
+Copy
+Edit
+python -m venv water_env
+source water_env/bin/activate  # or water_env\Scripts\activate (Windows)
+pip install -r requirements.txt
+
+# ✅ If using conda:
+bash
+Copy
+Edit
+conda env create -f environment.yml
+conda activate water_pollutants_env
+
+# 🚀 Run the app
+bash
+Copy
+Edit
+streamlit run app.py
 
 
