@@ -64,7 +64,7 @@ The dataset includes physicochemical parameters:
 
 ## 🤖 Modeling
 
-- Algorithm: **Random Forest Regressor** using **MultiOutputRegressor** 
+- Algorithm: **Random Forest Regressor** and **XGBoost Regressor** using **MultiOutputRegressor** 
 - Evaluation metrics: **Mean Absolute Error**, **Mean Squared Error**, **R² Score**
 - Trained on extracted and cleaned numerical features
 - Visual comparisons between actual vs predicted values 
